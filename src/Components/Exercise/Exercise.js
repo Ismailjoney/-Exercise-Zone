@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import ExerciseActivity from '../ExerciseActivity/ExerciseActivity';
+import Question from '../Question/Question';
 import './Exercise.css';
 
 const Exercise = () => {
@@ -24,10 +25,7 @@ const Exercise = () => {
   
     return (
         <div className='container'>
-            <h1>
-               
-                Exercise Zone
-            </h1>
+            <h1 className='topHeader'>Exercise Zone</h1>
             <div className="exercise">
                 <div className="exerciseProduct">
                     {
@@ -42,6 +40,7 @@ const Exercise = () => {
                     <Cart addToCart={addToCart}></Cart>
                 </div>
             </div>
+            <Question></Question>
         </div>
     );
 };

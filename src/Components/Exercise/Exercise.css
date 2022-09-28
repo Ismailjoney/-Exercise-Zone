@@ -1,6 +1,10 @@
 .container{
     margin: 20px 50px;
 }
+.topHeader{
+    position: sticky;
+    top:0;
+}
 .exercise{
     display:grid;
     grid-template-columns: 4fr 1fr;
@@ -12,10 +16,7 @@
     grid-template-columns:  repeat(3, 1fr);
     gap: 14px;
 }
-.exerciseCart{
-    border: 1px solid black;
-}
-
+ 
 .person-info div{
     margin:0 2px;
 }
@@ -24,6 +25,10 @@
  @media only screen and (max-width: 576px) {
     .container{
         margin:0;
+    }
+    .topHeader{
+        position: static;
+        
     }
     .exercise{
         display:grid;

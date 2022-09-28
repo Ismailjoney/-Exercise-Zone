@@ -6,8 +6,9 @@
 .exercise-details{
     width: 280px;
     height:440px;
-    border:1px solid red;
+    border: 1px solid darkslategrey;
     padding:20px;
+    border-radius: 8px;
     
 }
 .exercise-details img{
@@ -20,12 +21,25 @@
     position: absolute;
     bottom:0;
     left:0;
+    border-radius: 8px;
+}
+.addedCart:hover {
+    background-color: black;
+    color:antiquewhite;
 }
  
 @media only screen and (max-width: 576px) {
     .details{
         display: flex;
         justify-content: center;
+    }
+    .exercise-details{
+        width: 80%;
+        height:440px;
+        border: 1px solid darkslategrey;
+        padding:20px;
+        border-radius: 7px;
+        
     }
     .exercise-details img{
         width:100%;
