@@ -21,17 +21,19 @@
 }
 
 
-/* @media only screen and (max-width: 576px) {
-    body{
-        background-color: red;
-    }
+ @media only screen and (max-width: 576px) {
     .container{
         margin:0;
     }
     .exercise{
-        display:flex;
-        flex-direction: column;
-      
-        gap:16px;     
+        display:grid;
+        grid-template-columns: 1fr ;
+         /* display: flex;
+         flex-direction: columns; */
     }
-  } */
+    .exerciseProduct{
+        display:grid;
+        grid-template-columns:   1fr;
+        gap: 14px;
+    }
+  } 

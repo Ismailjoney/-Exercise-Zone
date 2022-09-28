@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import ExerciseActivity from '../ExerciseActivity/ExerciseActivity';
-import './Exercise.css'
+import './Exercise.css';
 
 const Exercise = () => {
     const [products, setProducts] = useState([]);
