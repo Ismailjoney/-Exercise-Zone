@@ -1,23 +1,32 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import ExerciseActivity from '../ExerciseActivity/ExerciseActivity';
 import './Exercise.css'
 
 const Exercise = () => {
     const [products, setProducts] = useState([]);
     const [addToCart, setAddToCart] =useState([]);
+    // const [add, setAdd] =useState;
+
     useEffect(()=>{
         fetch(`fakeDb.json`)
         .then(res => res.json())
-        .then(data =>  setProducts(data))
+        .then(data => setProducts(data))
     },[])
 
-    const handler = (id) => {
-        console.log(`click`,id)
+    const handler = (product) => {
+        //console.log(product);
+        const newAddedCart = [...addToCart,product];
+        // console.log(newAddedCart);
+        setAddToCart(newAddedCart);
     }
 
+//    const add = () => {
+//     add
+//    }
     return (
-        <div>
-            <h1>Navation bar</h1>
+        <div className='container'>
+            <h1>Exercise Zone</h1>
             <div className="exercise">
                 <div className="exerciseProduct">
                     {
@@ -29,7 +38,9 @@ const Exercise = () => {
                     
                 </div>
                 <div className="exerciseCart">
-                    <h1>cart</h1>
+                     <button>10s</button>
+                         
+                    <Cart addToCart={addToCart}></Cart>
                 </div>
             </div>
         </div>
