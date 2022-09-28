@@ -6,7 +6,7 @@ import './Exercise.css'
 const Exercise = () => {
     const [products, setProducts] = useState([]);
     const [addToCart, setAddToCart] =useState([]);
-    // const [add, setAdd] =useState;
+   
 
     useEffect(()=>{
         fetch(`fakeDb.json`)
@@ -21,9 +21,7 @@ const Exercise = () => {
         setAddToCart(newAddedCart);
     }
 
-//    const add = () => {
-//     add
-//    }
+  
     return (
         <div className='container'>
             <h1>Exercise Zone</h1>
@@ -37,9 +35,7 @@ const Exercise = () => {
                     }
                     
                 </div>
-                <div className="exerciseCart">
-                     <button>10s</button>
-                         
+                <div className="exerciseCart">       
                     <Cart addToCart={addToCart}></Cart>
                 </div>
             </div>

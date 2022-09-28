@@ -1,5 +1,4 @@
 .container{
- 
     margin: 20px 50px;
 }
 .exercise{
@@ -16,9 +15,23 @@
 .exerciseCart{
     border: 1px solid black;
 }
-/* @media screen (max-width: 560px) {
-    .container{
-        width:100%;
-        margin:0px;
+
+.person-info div{
+    margin:0 2px;
+}
+
+
+/* @media only screen and (max-width: 576px) {
+    body{
+        background-color: red;
     }
-} */
+    .container{
+        margin:0;
+    }
+    .exercise{
+        display:flex;
+        flex-direction: column;
+      
+        gap:16px;     
+    }
+  } */
