@@ -24,7 +24,10 @@ const Exercise = () => {
   
     return (
         <div className='container'>
-            <h1>Exercise Zone</h1>
+            <h1>
+               
+                Exercise Zone
+            </h1>
             <div className="exercise">
                 <div className="exerciseProduct">
                     {
