@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
- 
+    const [addTime,setAddTime] = useState(0);
     const {addToCart} = props;
  
     let totalTime = 0;
@@ -10,9 +10,9 @@ const Cart = (props) => {
         totalTime = totalTime + product.time
     }
 
-//    const handle = () => {
-//     console.log(`ghkg`a)
-//    }
+   const handle = (props) => {
+    setAddTime(props);  
+   }
     return (
         <div className='cart'>
             <h3>Mohammad Ismail Joney</h3>
@@ -22,13 +22,13 @@ const Cart = (props) => {
                 <h3>Age: 25</h3>
                   <br />
                   <h4>Add a  break</h4>   
-                <button>10s</button>
-                <button>20s</button>
-                <button>23s</button>
-                <button>13s</button>
+                <button onClick={() =>handle(`10s`)}>10s</button>
+                <button onClick={() => handle(`20s`)}>20s</button>
+                <button onClick={() => handle(`23s`)}>23s</button>
+                <button onClick={() => handle(`13s`)}>13s</button>
             <h4>Exercise Details</h4>
             <h5>Excuse Time :{totalTime} </h5>
-            <h5>Break time :</h5>
+            <h5>Break time :{addTime}</h5>
 
             <button>Activity Completed</button> 
         </div>
