@@ -1,24 +1,33 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { addToDb } from '../Utilities/Utilities';
 import './Cart.css';
 
 const Cart = (props) => {
     const [addTime,setAddTime] = useState(0);
     const {addToCart} = props;
+     
  
     let totalTime = 0;
     for(const product of addToCart){
         totalTime = totalTime + product.time
     }
 
+   
+    
+    
+
    const handle = (props) => {
-    setAddTime(props);  
+    setAddTime(props); 
+    addToDb(props);
    }
 
    //Toast
    const diffToast =() =>{
-    toast(`wellcome to my website`);
+    toast(`wellcome to my website`,{
+        position :'top-center'
+    });
    }
     return (
         <div>
