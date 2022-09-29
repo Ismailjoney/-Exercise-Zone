@@ -7,4 +7,14 @@
 .cart button{
     margin: 0 2px;
 }
+.btnActivity{
+    padding:10px 10px;
+    background-color: black;
+    color:white;
+    border-radius: 7px;
+}
+.btnActivity:hover{
+    background-color: white;
+    color:black
+}
  

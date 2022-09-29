@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import ExerciseActivity from '../ExerciseActivity/ExerciseActivity';
 import Question from '../Question/Question';
+import { addToDb } from '../Utilities/Utilities';
 import './Exercise.css';
 
 const Exercise = () => {
@@ -21,7 +22,7 @@ const Exercise = () => {
         // console.log(newAddedCart);
         setAddToCart(newAddedCart);
     }
-
+   
   
     return (
         <div className='container'>

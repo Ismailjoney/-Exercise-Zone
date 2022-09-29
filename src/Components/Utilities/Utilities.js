@@ -1,5 +1,6 @@
 const addToDb = id => {
-    localStorage.setItem(`time`,id)
+      localStorage.setItem(`time`,id)
+     
 }
 
 export {

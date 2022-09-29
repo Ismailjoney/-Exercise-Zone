@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { addToDb } from '../Utilities/Utilities';
@@ -11,13 +11,15 @@ const Cart = (props) => {
  
     let totalTime = 0;
     for(const product of addToCart){
-        totalTime = totalTime + product.time
+        totalTime = totalTime + product.time;
     }
-    
+
    const handle = (props) => {
     setAddTime(props); 
     addToDb(props);
    }
+
+   
 
    //Toast
    const diffToast =() =>{
@@ -43,7 +45,7 @@ const Cart = (props) => {
                 <h5>Excuse Time :{totalTime} </h5>
                 <h5>Break time :{addTime}</h5>
 
-                <button onClick={diffToast} >Activity Completed</button> 
+                <button className='btnActivity' onClick={diffToast} >Activity Completed</button> 
             </div>
             <ToastContainer></ToastContainer>
         </div>
