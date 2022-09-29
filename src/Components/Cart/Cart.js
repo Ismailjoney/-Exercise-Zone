@@ -13,11 +13,7 @@ const Cart = (props) => {
     for(const product of addToCart){
         totalTime = totalTime + product.time
     }
-
-   
     
-    
-
    const handle = (props) => {
     setAddTime(props); 
     addToDb(props);
