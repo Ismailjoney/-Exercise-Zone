@@ -26,8 +26,8 @@ const Cart = (props) => {
                 <button>23s</button>
                 <button>13s</button>
 
-            <p>Excuse Time :{totalTime} </p>
-            <p>Break time :</p>
+            <h5>Excuse Time :{totalTime} </h5>
+            <h5>Break time :</h5>
              
         </div>
     );
