@@ -1,6 +1,9 @@
+.questionContain{
+    margin-top:100px;
+}
 h2{
     text-align: center;
-    margin-top:20px;
+    text-decoration: underline;
 }
 .question{
     display: grid;

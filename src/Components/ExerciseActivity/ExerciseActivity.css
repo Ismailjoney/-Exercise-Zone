@@ -1,6 +1,6 @@
 .details{
-    position: relative;
-    
+    position: relative; 
+    box-sizing: border-box;
 }
 
 .exercise-details{
@@ -14,14 +14,17 @@
 .exercise-details img{
     width:100%;
     height:200px;
+   
 }
 .addedCart{
-    width:100%;
-    padding:13px;
+    width: 96%;
+    margin:0 auto;
+    padding:13px 0;
     position: absolute;
     bottom:0;
-    left:0;
     border-radius: 8px;
+    
+     
 }
 .addedCart:hover {
     background-color: black;

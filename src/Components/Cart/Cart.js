@@ -18,17 +18,19 @@ const Cart = (props) => {
             <h3>Mohammad Ismail Joney</h3>
                     
                 <h3>Weight : 75kg</h3>
-                <h3>height : 5.9</h3>
+                <h3>height : 5.8 </h3>
                 <h3>Age: 25</h3>
-                     
+                  <br />
+                  <h4>Add a  break</h4>   
                 <button>10s</button>
                 <button>20s</button>
                 <button>23s</button>
                 <button>13s</button>
-
+            <h4>Exercise Details</h4>
             <h5>Excuse Time :{totalTime} </h5>
             <h5>Break time :</h5>
-             
+
+            <button>Activity Completed</button> 
         </div>
     );
 };

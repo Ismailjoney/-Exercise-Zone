@@ -2,7 +2,7 @@ import React from 'react';
 import './Question.css'
 const Question = () => {
     return (
-        <div>
+        <div className='questionContain'>
             <h2>Question And Answer</h2>
             <div className='question'>
             <div>
