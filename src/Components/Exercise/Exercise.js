@@ -25,8 +25,8 @@ const Exercise = () => {
   
     return (
         <div className='container'>
-        
-            <h1 className='topHeader'>Exercise Zone</h1>
+             
+            <h1 className='topHeader'> <i class="fa-solid fa-person-walking"></i>Exercise Zone</h1>
             <div className="exercise">
                 <div className="exerciseProduct">
                     {
